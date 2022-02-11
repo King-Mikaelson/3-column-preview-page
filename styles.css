@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #ffff;
+}
+
+.cards{
+    display: grid;
+}
+
+
+@media (min-width: 1440px){
+    .cards {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 3fr));
+    grid-gap: 0rem;
+    }
+}
+
+
+.card{
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius : 8px;
+    color: white;
+    padding : 1.3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+}
+
+
+@media (min-width: 1440px){
+    .card {
+    width: 100%;
+    }
+}
+
+
+
+.card-description-img:hover{
+    transform: translateX(500%);
+    transition: transform 2s;
+}
+
+.card-description-heading{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    padding : 1.5rem;
+    color: hsl(0, 0%, 95%);
+    
+}
+
+.card-description-paragraph{
+    margin-bottom : 1.5rem;
+    line-height: 2rem;
+    padding-right: 4rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 18px;
+
+}
+
+.card-description-button{
+    margin-top: 4rem;
+    height: 4rem;
+    width: 50%;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    align-self: center;
+    border-color: white;
+    
+}
+
+
+
+.sedan .card-description-button{
+
+    color: hsl(31, 77%, 52%);
+    
+}
+
+
+.sedan .card-description-button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    
+}
+
+
+.Suv .card-description-button{
+
+    color: hsl(184, 100%, 22%);
+    
+}
+
+
+.Suv .card-description-button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    
+}
+
+
+.Luxury .card-description-button{
+
+    color: hsl(179, 100%, 13%);
+    
+}
+
+
+.Luxury .card-description-button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    
+}
+
+
+.card-description-button:hover{
+    color: white;
+}
+
+.card.sedan{
+    background-color: hsl(31, 77%, 52%);
+    
+
+}
+
+.card.Suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card.Luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+
+
